@@ -1,0 +1,57 @@
+# ==========================================
+# === BASENAME =============================
+# ==========================================
+# Basename key for all files associated with this run
+
+Galaxy File (BASENAME no extension)     = gx_petoskey
+
+
+# ==========================================
+# === GALAXY MODEL INPUTS ==================
+# ==========================================
+# Fixed Populations Filepaths
+# Fixed Populations info for filenames
+
+SF start (Myr)    = 13700.0
+SF duration (Myr) = 0.0
+
+thinDisk metal    = 0.014
+bulge metal       = 0.014
+thickDisk metal   = 0.00210
+
+thinDisk Path     = ../fixed/fixed_thinDisk/
+bulge Path        = ../fixed/fixed_bulge/
+thickDisk Path    = ../fixed/fixed_thickDisk/
+
+random Seed       = 6113
+
+
+# ==========================================
+# === BINARY SUB-POPULATIONS ===============
+# ==========================================
+# Flags to create certain binary populations
+#    FLAG = 0 (ignore);  FLAG = 1 (make)
+
+He_He [10,10]             = 1
+CO_He [11,10]             = 1
+CO_CO [11,11]             = 1
+ONe_He_ONe [12,10,12]     = 1
+NS_He_ONe [13,10,12]      = 0
+BH_He_ONe  [14,10,12]     = 0
+NS_NS [13,13]             = 0
+BH_NS [14,13]             = 0
+BH_BH [14,14]             = 0
+
+
+# ==========================================
+# === LISA PROCESSING INPUTS ===============
+# ==========================================
+# Inputs needed to process the LISA data
+
+Sensitivity Curve FILENAME              = ../lisaFiles/LISA2018_esaSTD.csv
+Tobs (YRS)                              = 4
+SNR Threshold                           = 5.0
+ALPHA (Fraction of bin for Chirp)       = 0.5
+wdFLAG (0: none, 1: CR, 2: HLRK, 3: HB) = 1
+
+
